@@ -13,39 +13,40 @@ public class PetSelection {
         JLabel label = new JLabel("Select a pet:");
         frame.add(label);
         
-        // Creating radio buttons
+        
         JRadioButton dogButton = new JRadioButton("Dog");
         JRadioButton catButton = new JRadioButton("Cat");
-        JRadioButton birdButton = new JRadioButton("Bird");
+        JRadioButton parrotButton = new JRadioButton("Parrot");
         JRadioButton fishButton = new JRadioButton("Fish");
         JRadioButton rabbitButton = new JRadioButton("Rabbit");
         
-        // Grouping radio buttons
+     
         ButtonGroup group = new ButtonGroup();
         group.add(dogButton);
         group.add(catButton);
-        group.add(birdButton);
+        group.add(parrotButton);
         group.add(fishButton);
         group.add(rabbitButton);
         
-        // Adding buttons to frame
+      
         frame.add(dogButton);
         frame.add(catButton);
-        frame.add(birdButton);
+        frame.add(parrotButton);
         frame.add(fishButton);
         frame.add(rabbitButton);
         
         JButton selectButton = new JButton("Show Selection");
         frame.add(selectButton);
         
-        // Action listener for button click
+
+
         selectButton.addActionListener(new ActionListener() {
         
             public void actionPerformed(ActionEvent e) {
                 String selectedPet = "No pet selected";
                 if (dogButton.isSelected()) selectedPet = "Dog";
                 else if (catButton.isSelected()) selectedPet = "Cat";
-                else if (birdButton.isSelected()) selectedPet = "Bird";
+                else if (parrotButton.isSelected()) selectedPet = "Parrot";
                 else if (fishButton.isSelected()) selectedPet = "Fish";
                 else if (rabbitButton.isSelected()) selectedPet = "Rabbit";
                 
