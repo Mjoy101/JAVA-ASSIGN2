@@ -7,10 +7,10 @@ public class PetSelection {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Pet Selector");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 200);
-        frame.setLayout(new FlowLayout());
+        frame.setSize(300, 300);
+        frame.setLayout(new GridLayout(7,1));
         
-        JLabel label = new JLabel("Select a pet:");
+        JLabel label = new JLabel("Select a pet:" , SwingConstants.CENTER);
         frame.add(label);
         
         
